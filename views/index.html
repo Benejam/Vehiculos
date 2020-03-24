@@ -1,0 +1,39 @@
+<head>
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div id="carForm">
+            <p>Cree su Vehiculo</p>
+            <div class="input car-input">
+                <label for="plate">Matrícula: </label><input type="text" id="plate">
+                <label for="brand">Marca: </label><input type="text" id="brand">
+                <label for="color">Color: </label><input type="text" id="color">
+            </div>
+            <button onclick="callCreateCar()">Crear Coche</button>
+        </div>
+
+        <div id="wheelsForm" class="display-none">
+            <p>Elija los neumático</p>
+            <div class="input wheel-input">
+                <span>Rueda 1</span>
+                <label for="wheel1Brand">Marca: </label><input type="text" id="wheel1Brand">
+                <label for="wheel1Diameter">Diámetero: </label><input type="number" step="0.1" id="wheel1Diameter">
+                <span>Rueda 2</span>
+                <label for="wheel2Brand">Marca: </label><input type="text" id="wheel2Brand">
+                <label for="wheel2Diameter">Diámetero: </label><input type="number" step="0.1" id="wheel2Diameter">
+                <span>Rueda 3</span>
+                <label for="wheel3Brand">Marca: </label><input type="text" id="wheel3Brand">
+                <label for="wheel3Diameter">Diámetero: </label><input type="number" step="0.1" id="wheel3Diameter">
+                <span>Rueda 4</span>
+                <label for="wheel4Brand">Marca: </label><input type="text" id="wheel4Brand">
+                <label for="wheel4Diameter">Diámetero: </label><input type="number" step="0.1" id="wheel4Diameter">
+            </div>
+            <button id="addWheels">Añadir Neumáticos</button>
+        </div>
+    </div>
+    <div class="output" id="carInfo"></div>
+</body>
